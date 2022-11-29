@@ -1,0 +1,17 @@
+body {
+    background-image: url(1812936.jpg);
+}
+
+.head{
+    font-style: oblique;
+    border-style: double;
+    border-width: 10px;
+    font-size: larger;
+    background-color: rgb(110, 243, 231);
+    color: rgb(47, 49, 111);
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
