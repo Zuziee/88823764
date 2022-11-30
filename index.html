@@ -6,11 +6,195 @@
 </head>
 
 <body>
-    <h1></h1>This is text <br />
-    <h1>This is a Heading</h1>
-    <h1 color="red">This is a Heading</h1>
-    <img src="MajinBuu.webp" />
-    <p>This is a paragraph.</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>
+        This paragraph contains&nbsp; a lot of linesin the source code,
+        <br> but the browser ignores it.
+    </p>
+
+    <p>
+        <b>This</b> <i>paragraph</i> contain<sub>s</sub> a lot of line<sup>s</sup> in the source code,
+        <br />
+        <hr />but the browser ignores it.
+    </p>
+
+    <ul>
+        <!-- comment is คลุมข้อความที่จะ comment จากนั้นกด ctrl และ ? พร้อมกัน -->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ol>
+        <!-- Menu -->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <!-- click link -->
+    <a href="test.html" target="_blank">Visit Google</a>
+    <a href="https://www.google.com/" target="_self">Visit Google
+    </a>
+    <br />
+
+    <!-- comment ใต้รูป -->
+    <figure>
+        <img src="MajinBuu.webp" alt="Girl in a jacket" style="width:500px;height:600px;" title="Girl in a jacket" />
+        <br />
+        <figcaption>Girl in a jacket</figcaption>
+        <figure>
+
+
+
+        </figure>
+
+        <!-- ตาราง -->
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+        </table>
+        <br />
+
+        <table border="2" width="100%">
+            <tr>
+                <th></th>
+                <th scope="col">Saturday</th>
+                <th scope="col">Sunday</th>
+            </tr>
+            <tr>
+                <th scope="row">Tickets sold:</th>
+                <td>120</td>
+                <td>135</td>
+            </tr>
+            <tr>
+                <th scope="row">Total sales:</th>
+                <td>$600</td>
+                <td>$675</td>
+            </tr>
+        </table>
+        <br />
+
+        <table border="2" width="100%">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Income</th>
+                    <th>Expenditure</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>1st January</th>
+                    <td>250</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <th>2nd January</th>
+                    <td>285</td>
+                    <td>48</td>
+                </tr><!-- additional rows as above -->
+                <tr>
+                    <th>31st January</th>
+                    <td>129</td>
+                    <td>64</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+
+        <!-- form กล่องข้อความ -->
+        <form action="#">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <input type="password"> <br>
+            <label for="testtextarea">test textarea:</label>
+            <textarea rows="10"></textarea>
+            <br><br>
+
+            <!-- ปุ่มกลมๆ -->
+            <label for="r1">radio value m</label>
+            <input type="radio" id="r1" value="M">
+            <label for="r2">radio value w</label>
+            <input type="radio" id="r2" value="W">
+            <br>
+
+            <input type="reset">
+            <input type="submit">
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <br />
+
+        <!-- ปุ่มกลมๆ -->
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form>
+        <br />
+
+        <!-- ติ๊กกล่องสี่เหลี่ยม -->
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> <label for="vehicle3"> I have a
+                boat</label>
+        </form>
+        <br />
+
+        <select>
+            <option selected disabled>เลือก</option>
+            <option value="1">สีเเดง</option>
+            <option value="2">สีเเดง</option>
+            <option value="3">สีเเดง</option>
+        </select>
+        <br>
+        <input type="date">
+        <input type="d">
+        <input type="datetime-local">
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+        <br>
+
+        <form> 
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+        </form>
+        <br>
+
 </body>
 
 </html>
