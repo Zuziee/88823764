@@ -1,7 +1,38 @@
 body {
-    background-image: url(1812936.jpg);
+    background-image: url(733878.png);
 }
 
 .head{
-   color: aquas; 
+    background-color: rgb(206, 194, 194);
+    border: 2px solid rgb(47, 49, 111);
+    border-width: 3px;
+    font-size: larger;
+    color: rgb(47, 49, 111);
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 420px;
+    margin-top: 30px;
+}
+
+.content img{
+    margin-top: 20px;
+    margin-left: 150px;
+    border: 2px solid rgb(47, 49, 111);
+}
+
+.content{
+    display: flex;
+}
+
+.content p {
+    background-color: rgb(206, 194, 194);
+    color: rgb(47, 49, 111);
+    font-size: larger;
+    width : 450px;
+    height: 150px;
+    border: 2px solid rgb(47, 49, 111);
+    padding: 10px;
+    margin-left: 20px;
+display: flex;
 }
